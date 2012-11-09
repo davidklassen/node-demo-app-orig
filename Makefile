@@ -1,11 +1,11 @@
 REPORTER=spec
+TESTS=$(shell find ./tests -type f -name "*.js")
 
 test:
 	@./node_modules/.bin/mocha \
 		--require should \
-		--bail \
 		--reporter $(REPORTER) \
-		tests
+		$(TESTS)
 		
 .PHONY: test
 
