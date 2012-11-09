@@ -5,3 +5,10 @@ exports.home = function (req, res) {
   })
 }
 
+exports.about = function (req, res) {
+  res.render('pages/about', {
+      title: 'About page'
+    , message: 'This is the "about" action of "pages" controller'
+  })
+}
+
