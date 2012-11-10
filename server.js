@@ -1,4 +1,4 @@
-var app = require(__dirname + '/app/app')
+var app = require(__dirname + '/app')
   , port = process.env.PORT || 3000
 
 app.listen(port, function () {
